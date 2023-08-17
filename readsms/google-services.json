@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "472504126750",
+    "project_id": "read-sms-f47e3",
+    "storage_bucket": "read-sms-f47e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472504126750:android:9ed0fc607b150e031f8d0f",
+        "android_client_info": {
+          "package_name": "com.muthootfinance.readsms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472504126750-81tnd3utc57mml29sgdqb1t2150d3e48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIdfse2dOL-LkTbS6d4HcQ2mrDfsV5BTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472504126750-81tnd3utc57mml29sgdqb1t2150d3e48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
