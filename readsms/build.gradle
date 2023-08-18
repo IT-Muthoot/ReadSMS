@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
     id 'com.google.gms.google-services'
     id 'maven-publish'
+//    id 'kotlin-android'
 }
 
 android {
@@ -26,6 +27,17 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+//    kotlinOptions {
+//        jvmTarget = '1.8'
+//        useIR = true
+//    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerVersion '1.5.30'
+    }
 }
 
 dependencies {
@@ -40,16 +52,15 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
 }
 
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            release(MavenPublication) {
-//                from components.release
-//                groupId = 'com.github.IT-Muthoot'
-//                artifactId = 'readsms'
-//                version = '1.0'
-//            }
-//        }
-//    }
-//}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.IT-Muthoot'
+                artifactId = 'readsms'
+                version = '1.0'
+            }
+        }
+    }
+}
 
